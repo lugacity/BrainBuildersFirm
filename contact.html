@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- <link rel="stylesheet" href="learnmore/aninate.css"> -->
+  <link rel="shortcut icon" type="image/jpg" href="img/brainlogo.webp"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Vendors/css/grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  
+  <section class="top-nav">
+    <div id="logo-details">
+        <a href="./index.html"><img src="img/brainlogo.png" id="logo-details-2" alt="brainlogo" style="height: 40px; width:40px"></a>
+        <a href="#" id="logo-details-3" style="display: none;">BBITF</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="./index.html" data-after="Home">Home</a></li>
+      <li><a href="./about.html" data-after="About">About</a></li>
+      <li style="border-bottom: 3px solid white;"><a href="./contact.html" data-after="Contact">Contact</a></li>
+      <li><a href="#" data-after="Service">Services</a>
+        <div class="sub-menu-1"> 
+          <ul style="z-index: 1;">
+            <li><a href="./webdesign.html">Website Design</a></li>
+            <li><a href="./webdev.html">Web App Dev</a></li>
+            <li><a href="./mobapp.html">Mobile App Dev</a></li>
+            <li><a href="./design.html">Graphic Design</a></li>
+            <li><a href="./digitalmarketing.html">Digital Marketing</a></li>
+            <li><a href="./emailmarketing.html">Email Marketing</a></li>
+            <li><a href="./socmedadv.html">Social Media Management</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./blog.html" data-after="Blog">Blog</a></li>
+      <li><a style="color: #f46b45; font-weight: 600;" class="login-detail" href="./login.html" data-after="Login">Login</a></li>
+    </ul>
+  </section>
+
+<!-- UI Design service  -->
+<div class="design-service" style="background-image: url(img/about/contactus.jpg);">
+    <div class="design-service-1" data-aos="zoom-in" data-aos-duration="3000">
+      <h1>CONTACT US</h1> <br>
+      <a style="color: #fff; font-size: 1rem; background-color: #f46b45; padding: 15px 40px;" href="./index.html" data-after="Home">Home</a>
+    </div>
+    <div class="design-service-2">
+        <div class="design-service-3" data-aos="fade-down" data-aos-duration="3000">
+            <p>IF YOU GOT ANY QUESTIONS PLEASE DO NOT HESITATE TO SEND US A MESSAGE</p>
+        </div>
+        <!-- Form -->
+        <div class="build-details-2">
+            <button id="myBtn" class="build-details-modal">Click Here to Reach Out Us</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form action="#">
+                    <h2 style="font-size: 1.5rem; color: #f46b45;">DO YOU HAVE A REQUEST</h2>
+                        <label for="lname">Describe Your Website Project </label>
+                      <textarea maxlength="250" id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+                  
+                      <label for="budget">What's your budget?</label>
+                      <input type="text" id="budget" name="budget" placeholder="Amount in Naira..">
+                  
+                      <label for="fname">Full Name</label>
+                      <input type="text" id="fname" name="fname" placeholder="Your name..">
+              
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="email" placeholder="Your last email..">
+                  
+                      <label for="phoneno">Phone Number</label>
+                          <input type="text" id="phoneno" name="phoneno" placeholder="Your phone no..">
+                  
+                     <label for="company">Company</label>
+                      <input type="text" id="company" name="company" placeholder="Your company name..">
+                  
+                  <label for="country">Project Type</label>
+                  <select id="project" name="projectType">
+                    <option value="ecommerce">Ecommerce</option>
+                    <option value="school">School Portal</option>
+                    <option value="payment">Payment Gateway Integration</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <input type="submit" value="Send Request">
+                </form>
+            </div>
+            </div>
+        </div>
+        <div class="design-service-4" data-aos="fade-up" data-aos-duration="3000">
+            <img src="img/about/contact1.png" alt="contact-img">
+            <p>WE ARE HERE TO HELP</p>
+        </div>
+    </div>
+  </div> 
+  <!-- UI Design service-->
+  
+  <!-- COntact Us -->
+  <div class="contact-details">
+    <div class="contact-details-1">
+        <div class="contact-details-2">
+            <h1>What will be next step?</h1>
+            <p>You are on step closer to build your perect product</p>
+        </div>
+        <div class="row contact-details-3">
+            <div class="col span-1-of-3 contact-details-4">
+                <span>1</span><h2>We'll prepare a proposal</h2>
+               <p>Required scope, timeline and a price will be included if you provie us information about the project</p>
+            </div>
+            <div class="col span-1-of-3 contact-details-4">
+                <span>2</span><h2>Together we discuss it</h2>
+                <p>let's get acqquiainted and discuss all the possible variants and options. Google Hangouts or Googlemeet usually works great.</p>
+             </div>
+             <div class="col span-1-of-3 contact-details-4">
+                <span>3</span><h2>Let's start building </h2>
+                <p>When the contract is signed, and all goals are set we can start the first sprint.</p>
+             </div>
+        </div>
+    </div>
+    <div class="contact-details-info">
+        <div class="row" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="1000" data-aos-duration="500">
+            <div class="col span-1-of-3 contact-details-info-1">
+                <i class="fa fa-phone-square" ></i>
+               <p>+234 706 8775 529</p>
+               <p>+234 803 7676 867</p>
+            </div>
+            <div class="col span-1-of-3 contact-details-info-1">
+                <i class="fa fa-map-marker" ></i>
+                <p>CD8, ORISATOYINBO SHOPPIING COMPLEX, OBADA MARKET, OSUN STATE.</p>
+             </div>
+             <div class="col span-1-of-3 contact-details-info-1">
+                <i class="fa fa-envelope" ></i>
+                <p>REACH OUT TO US IN THE ABOVE BOX</p> <br>
+             </div>
+        </div>
+    </div>
+  </div>
+  <!-- EndCOntact Us -->
+
+<!-- Footer -->
+<div class="footer-details">
+  <div class="footer-details-1">
+    <ul class="menus" style="font-weight: 500; font-size: 1.2rem;">
+      <li><a href="applynow.html">Apply</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <!-- <li><a href="#" data-after="Project">Projects</a></li> -->
+    </ul>
+    <div class="footer-social-link">
+      <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+      <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+    </div> <hr><br>
+    <div class="footer-social-content"> 
+      <p style="color: #fff;">Copyright 2023. Brain Builders IT Firm. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+<!--End Footer -->
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

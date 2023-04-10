@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MobApp</title>
+  <!-- <link rel="stylesheet" href="learnmore/aninate.css"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="img/brainlogo.webp"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Vendors/css/grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  
+  <section class="top-nav">
+    <div id="logo-details">
+        <a href="./index.html"><img src="img/brainlogo.png" id="logo-details-2" alt="brainlogo" style="height: 40px; width:40px"></a>
+        <a href="#" id="logo-details-3" style="display: none;">BBITF</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="./index.html" data-after="Home">Home</a></li>
+      <li><a href="./about.html" data-after="About">About</a></li>
+      <li><a href="./contact.html" data-after="Contact">Contact</a></li>
+      <li><a href="/.service.html" data-after="Service">Services</a></li>
+      <li><a href="./blog.html" data-after="Blog">Blog</a></li>
+      <li><a style="color: #f46b45; font-weight: 600;" class="login-detail" href="./login.html" data-after="Login">Login</a></li>
+    </ul>
+  </section>
+
+
+<!-- Web Dev App  -->
+<div class="design-service" style="background-image: url(img/service/webdev/socialmedia.jpg);">
+    <div class="design-service-1" data-aos="fade-out" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+      <h1 >SOCIAL MEDIA MANAGEMENT</h1>
+      <!-- <p>Empower your app product to change the world.</p> -->
+    </div>
+  </div> 
+  <!--Web Dev App-->
+
+<!-- Develop -->
+<div class="webapp-details">
+    <div class="webapp-details-1"  data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+        <h1 style="font-weight: 600; border-bottom: 2px solid #777777;">Social Media Marketing & Management
+        </h1><br>
+        <p>We take care of our clients' social media activities for a token, while they take care of their core 
+            business and generate more revenue. We excel in Facebook, Instagram, Twitter, LinkedIn, YouTube and
+             Nairaland. Whatever your business may be, real estate, consumer electronics, financial services,
+              hospitality or nonprofits, our social media management services position your business for success. <br><br>
+            Our team consists of media planner, content writer, graphics artist, web developers and a couple of 
+            them are Google AdWords Certified Professional. They work together to give your brand the best visibility online. 
+            Our team has been servicing and providing social media management for national clients as well as medium to small 
+            business enterprises. We have received impressive feedback for effective execution of projects within their deadlines.</p>
+    </div>
+    <div class="webapp-details-1" data-aos="flip-left" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+        <h1 style="font-weight: 600;">Our approach to getting an effective social media presence for your business are:</h1><br>
+        <ul style="list-style-type: circle; line-height: 1.7rem;">
+        <li style="text-align: justify; margin-bottom: 15px;"> Determine what the objective of the campaign will be</li>
+        <li style="text-align: justify; margin-bottom: 15px;"> Profile who the target audience will be.</li>
+        <li style="text-align: justify; margin-bottom: 15px;"> Attract relevant audience</li>
+        <li style="text-align: justify; margin-bottom: 15px;"> Engage with them via quality content</li>
+        <li style="text-align: justify; margin-bottom: 15px;"> Sell engaged audience</li>
+        <li style="text-align: justify; margin-bottom: 15px;"> Retarget them for further conversion or repeat sales</li>
+      </ul>    
+      <p>Do you want us to handle your <b style="color: #f46b45;">SOCIAL MEDIA MARKETING & MANAGEMENT?</b> Please request a quote and we will get across to you before close of next business day.</p>
+    </div>
+  </div>
+<!-- EndDevelop -->
+
+
+<!-- Build TOgether -->
+<div class="build-details">
+    <div class="build-details-1"  data-aos="fade-out" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+        <h1>Let's Build Together</h1>
+        <p>We'd love to hear about your product or idea.</p>
+    </div>
+    <div class="build-details-2">
+        <button id="myBtn" class="build-details-modal">Click Here to Reach Out Us</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#">
+                <h2 style="font-size: 1.5rem; color: #f46b45;">DO YOU HAVE A REQUEST</h2>
+                    <label for="lname">Describe Your App Project </label>
+                  <textarea maxlength="250" id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+              
+                  <label for="budget">What's your budget?</label>
+                  <input type="text" id="budget" name="budget" placeholder="Amount in Naira..">
+              
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="Your name..">
+          
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your last email..">
+              
+                  <label for="phoneno">Phone Number</label>
+                      <input type="text" id="phoneno" name="phoneno" placeholder="Your phone no..">
+              
+                 <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company name..">
+              
+              <label for="country">Project Type</label>
+              <select id="project" name="projectType">
+                <option value="ecommerce">Ecommerce</option>
+                <option value="school">School Portal</option>
+                <option value="payment">Payment Gateway Integration</option>
+                <option value="others">Others</option>
+              </select>
+              <input type="submit" value="Send Request">
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- End Build TOgether -->
+
+<!-- Footer -->
+<div class="footer-details">
+  <div class="footer-details-1">
+    <ul class="menus" style="font-weight: 500; font-size: 1.2rem;">
+      <li><a href="applynow.html">Apply</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <!-- <li><a href="#" data-after="Project">Projects</a></li> -->
+    </ul>
+    <div class="footer-social-link">
+      <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+      <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+    </div> <hr><br>
+    <div class="footer-social-content"> 
+      <p style="color: #fff;">Copyright 2023. Brain Builders IT Firm. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+<!--End Footer -->
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+
+

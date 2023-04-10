@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaymentMethod</title>
+  <!-- <link rel="stylesheet" href="learnmore/aninate.css"> -->
+  <link rel="shortcut icon" type="image/jpg" href="img/brainlogo.webp"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Vendors/css/grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+  
+  <section class="top-nav">
+    <div id="logo-details">
+        <a href="./index.html"><img src="img/brainlogo.png" id="logo-details-2" alt="brainlogo" style="height: 40px; width:40px"></a>
+        <a href="#" id="logo-details-3" style="display: none;">BBITF</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="./index.html" data-after="Home">Home</a></li>
+      <li><a href="./about.html" data-after="About">About</a></li>
+      <li><a href="./contact.html" data-after="Contact">Contact</a></li>
+      <li><a href="#" data-after="Service">Services</a>
+        <div class="sub-menu-1"> 
+          <ul style="z-index: 1;">
+            <li><a href="./webdesign.html">Website Design</a></li>
+            <li><a href="./webdev.html">Web App Dev</a></li>
+            <li><a href="./mobapp.html">Mobile App Dev</a></li>
+            <li><a href="./design.html">Graphic Design</a></li>
+            <li><a href="./digitalmarketing.html">Digital Marketing</a></li>
+            <li><a href="./emailmarketing.html">Email Marketing</a></li>
+            <li><a href="./socmedadv.html">Social Media Management</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="./blog.html" data-after="Blog">Blog</a></li>
+      <li><a style="color: #f46b45; font-weight: 600;" class="login-detail" href="./login.html" data-after="Login">Login</a></li>
+    </ul>
+  </section>
+
+<!-- Registration Form Fill -->
+<div class="reg-details">
+  <div class="content-skils-details">
+    <h1>BRAIN BUILDERS IT FIRM</h1>
+  </div> 
+  <form id="paymentForm">
+    <div class="reg-details-1">
+        <div class="reg-details-2" style="background-color: #f46b45;">
+            <h1 style="color: #fefefe;" > REGISTRATION FORM</h1>
+        </div>
+        <div class="reg-details-3" style="background-color: #fefefe;">
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Name</label>
+                </div>
+               <div class="form-reg-details-1">
+                    <input type="text" name="firtname" id="firtname">
+                    <label>First Name</label>
+               </div>
+               <div class="form-reg-details-1">
+                    <input type="text" name="lastname" id="lastname">
+                    <label>Last Name</label>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Email</label>
+                </div>
+               <div class="form-reg-details-2">
+                    <input class="form-reg-details-2" type="email" name="email" id="email-address" required>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Phone</label>
+                </div>
+               <div class="form-reg-details-2">
+                    <input class="form-reg-details-2" type="phone" placeholder="+234" name="phone" id="phone" required>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Track</label>
+                </div>
+               <div class="form-reg-details-2">
+                    <select class="form-reg-details-2">
+                        <option>Tracks</option>
+                        <option>Weekdays (Twice in a Week)</option>
+                        <option>Weekend (Saturday Only)</option>
+                    </select>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Location</label>
+                </div>
+               <div class="form-reg-details-2">
+                    <select class="form-reg-details-2">
+                        <option>Nigerian</option>
+                        <option>Non-Nigerian</option>
+                    </select>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Gender</label>
+                </div>
+               <div class="form-reg-details-4">
+                    <input type="radio" name="fav_language" id="male"> 
+                    <label>Male</label>
+               </div>
+               <div class="form-reg-details-4">
+                    <input type="radio" name="fav_language" id="female">
+                    <label>Female</label>
+               </div>
+            </div>
+            <div class="form-reg">
+                <div class="form-reg-details">
+                    <label>Amount</label>
+                </div>
+               <div>
+                    <select id="amount">
+                        <option>Amount</option>
+                        <option>70000</option>
+                        <option>100000</option>
+                    </select>
+               </div>
+            </div>
+            <div class="form-submit">
+                <button type="submit" onclick="payWithPaystack()"> Pay </button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<!-- End Form Fill -->
+
+<!-- Footer -->
+<div class="footer-details">
+  <div class="footer-details-1">
+    <ul class="menus" style="font-weight: 500; font-size: 1.2rem;">
+      <li><a href="applynow.html">Apply</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <!-- <li><a href="#" data-after="Project">Projects</a></li> -->
+    </ul>
+    <div class="footer-social-link">
+      <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+      <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+    </div> <hr><br>
+    <div class="footer-social-content"> 
+      <p style="color: #fff;">Copyright 2023. Brain Builders IT Firm. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+<!--End Footer -->
+
+   
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+    <script>
+    const paymentForm = document.getElementById('paymentForm');
+    paymentForm.addEventListener("submit", payWithPaystack, false);
+    function payWithPaystack(e) {
+    e.preventDefault();
+
+    let handler = PaystackPop.setup({
+    key: 'pk_live_6368ca8f8758f7df0def3f0334ce9410543b3bf9', // Replace with your public key
+    email: document.getElementById("email-address").value,
+    amount: document.getElementById("amount").value * 100,
+    ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+    // label: "Optional string that replaces customer email"
+    onClose: function(){
+    alert('Window closed.');
+    },
+    callback: function(response){
+    let message = 'Payment complete! Reference: ' + response.reference;
+    alert(message);
+    }
+    });
+
+    handler.openIframe();
+    }
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <script src="app.js"></script>
+</body>
+</html>
+
+
+

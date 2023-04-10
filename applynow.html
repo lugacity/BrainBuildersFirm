@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv=“X-UA-Compatible” content=“IE=Edge”>
+  <title>Applynow</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/jpg" href="img/brainlogo.webp"/>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="sortable.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./isolde.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body> 
+  <section class="top-nav">
+    <div id="logo-details">
+        <a href="./index.html"><img src="img/brainlogo.png" id="logo-details-2" alt="brainlogo" style="height: 40px; width:40px"></a>
+        <a href="#" id="logo-details-3" style="display: none;">BBITF</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="./index.html" data-after="Home">Home</a></li>
+      <li><a href="./about.html" data-after="About">About</a></li>
+      <li><a href="./contact.html" data-after="Contact">Contact</a></li>
+      <li><a href="/.service.html" data-after="Service">Services</a></li>
+      <li><a href="./blog.html" data-after="Blog">Blog</a></li>
+      <li><a style="color: #f46b45; font-weight: 600;" class="login-detail" href="./login.html" data-after="Login">Login</a></li>
+    </ul>
+  </section>
+
+<!-- Develop -->
+<div class="course-details">
+    <div class="course-details-1">
+        <h1 style="font-weight: 600; border-bottom: 2px solid #777777;">COURSES AVAILABLE</h1><br>
+        <!-- <p>Our creativity is driven by market and consumer insights, producing designs that works. Not only that, we also work closely with our clients to produce something they are happy with.</p> -->
+    </div>
+    <div class="course-details-1">
+      <main class="sortable">
+        <div class="container">
+          <div class="wrapper">
+            <ul class="sortable__nav nav">
+              <li>
+                <a data-isolde-link="all" class="nav__link">
+                  All Courses
+                </a>
+              </li>
+              <li>
+                <a data-isolde-link="flatty" class="nav__link">
+                  Full Time
+                </a>
+              </li>
+              <li>
+                <a data-isolde-link="funny" class="nav__link">
+                  Online
+                </a>
+              </li>
+              <li>
+                <a data-isolde-link="notfunny" class="nav__link">
+                  Weekend
+                </a>
+              </li>
+            </ul>
+            <div id="isolde" class="isolde-default" >
+              <div data-isolde-el="flatty" >
+                <a href="./backend.html">
+                <div class="card">
+                    <div class="card-1">
+                        <img class="card__picture" src="./Klamdesign/register/reg1.jpeg" alt="">
+                      </div>
+                      <div class="card-2">
+                        <p>Full Time</p>
+                      </div>
+                  <div class="card-infos">
+                    <h2 class="card__title">Backend With PHP</h2>
+                    <p class="card__text">
+                        Build and deploy robust web applications and apps using PHP. Using PHP security implications to create safe web applications with it.
+                    </p>
+                  </div>
+                  <!-- <div class="footer-social-link">
+                    <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a>
+                  </div> -->
+                </div>
+                </a>
+              </div>
+              <div data-isolde-el="flatty">
+                <a href="./uicourse.html">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg2.jpg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Full Time</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">UI/UX Design and Prototyping (Product Design) </h2>
+                        <p class="card__text">
+                            User Interface(UI) and User Experience(UX) design are in great demand and are applicable across products and industry domains. With customer experience being the centerfold…
+                        </p>
+                      </div>
+                      <div class="footer-social-link">
+                        <!-- <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a> -->
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="funny">
+                <a href="./reactfront.html">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg3.jpg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Online</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">Frontend Web Development with React JS</h2>
+                        <p class="card__text">
+                            Start off your career today as a Front-End Web Developer. Learn to build high quality websites with dynamic applications to create stunning user experiences…
+                        </p>
+                      </div>
+                      <!-- <div class="footer-social-link">
+                        <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a>
+                      </div> -->
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="flatty">
+                <a href="./reactfront.html">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg3.jpg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Full Time</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">Frontend Web Development with React JS</h2>
+                        <p class="card__text">
+                            Start off your career today as a Front-End Web Developer. Learn to build high quality websites with dynamic applications to create stunning user experiences…
+                        </p>
+                      </div>
+                      <div class="footer-social-link">
+                        <!-- <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a> -->
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="flatty">
+                <a href="./fullstack.html">
+                    <div class="card">
+                      <div class="card-1">
+                        <img class="card__picture" src="./Klamdesign/register/web3.png" alt="">
+                      </div>
+                      <div class="card-2">
+                        <p>Full Time</p>
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">FullStack Web Development</h2>
+                        <p class="card__text">
+                            Acquire the skills and knowledge needed to build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6…
+                        </p>
+                      </div>
+                      <!-- <div class="footer-social-link">
+                        <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a>
+                      </div> -->
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="funny">
+                <a href="#">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg2.jpg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Online</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">UI/UX Design and Prototyping (Product Design) </h2>
+                        <p class="card__text">
+                            User Interface(UI) and User Experience(UX) design are in great demand and are applicable across products and industry domains. With customer experience being the centerfold…
+                        </p>
+                      </div>
+                      <div class="footer-social-link">
+                        <!-- <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a> -->
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="flatty">
+                <div class="card">
+                  <!-- <img class="card__picture" src="./Klamdesign/77.jpg" alt=""> -->
+                  <!-- <div class="card-infos">
+                    <h2 class="card__title">Example 7</h2>
+                    <p class="card__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni sunt dolores nam...
+                    </p>
+                  </div> -->
+                </div>
+              </div>
+              <div data-isolde-el="funny">
+                <a href="#">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg1.jpeg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Online</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">Backend With PHP</h2>
+                        <p class="card__text">
+                            Build and deploy robust web applications and apps using PHP. Using Django’s security implications to create safe web applications with it.
+                        </p>
+                      </div>
+                      <div class="footer-social-link">
+                        <!-- <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a> -->
+                      </div>
+                    </div>
+                </a>
+              </div>
+              <div data-isolde-el="notfunny">
+                <a href="#">
+                    <div class="card">
+                        <div class="card-1">
+                            <img class="card__picture" src="./Klamdesign/register/reg1.jpeg" alt="">
+                          </div>
+                          <div class="card-2">
+                            <p>Weekend</p>
+                          </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">Backend With PHP</h2>
+                        <p class="card__text">
+                            Build and deploy robust web applications and apps using PHP. Using Django’s security implications to create safe web applications with it.
+                        </p>
+                      </div>
+                      <!-- <div class="footer-social-link">
+                        <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a>
+                      </div> -->
+                    </div>
+                    </a>
+              </div>
+              <div data-isolde-el="notfunny">
+                <a href="./fullstack.html">
+                    <div class="card">
+                      <div class="card-1">
+                        <img class="card__picture" src="./Klamdesign/register/web3.png" alt="">
+                      </div>
+                      <div class="card-2">
+                        <p>Weekend</p>
+                      </div>
+                      <div class="card-infos">
+                        <h2 class="card__title">FullStack Web Development</h2>
+                        <p class="card__text">
+                            Acquire the skills and knowledge needed to build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6…
+                        </p>
+                      </div>
+                      <!-- <div class="footer-social-link">
+                        <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="color: #f46b45; font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="color: #f46b45; font-size:24px"></i></a>
+                      </div> -->
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+<!-- EndDevelop -->
+
+
+<!-- Build TOgether -->
+<div class="build-details">
+    <div class="build-details-1">
+        <h1>Let's Build Together</h1>
+        <p>We'd love to hear about your product or idea.</p>
+    </div>
+    <div class="build-details-2">
+        <button id="myBtn" class="build-details-modal">Click Here to Reach Out Us</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#">
+                <h2 style="font-size: 1.5rem; color: #f46b45;">DO YOU HAVE A REQUEST</h2>
+                    <label for="lname">Describe Your Website Project </label>
+                  <textarea maxlength="250" id="subject" name="subject" placeholder="Write something.." style="height:200px;"></textarea>
+              
+                  <label for="budget">What's your budget?</label>
+                  <input type="text" id="budget" name="budget" placeholder="Amount in Naira..">
+              
+                  <label for="fname">Full Name</label>
+                  <input type="text" id="fname" name="fname" placeholder="Your name..">
+          
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your last email..">
+              
+                  <label for="phoneno">Phone Number</label>
+                      <input type="text" id="phoneno" name="phoneno" placeholder="Your phone no..">
+              
+                 <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company name..">
+              
+              <label for="country">Project Type</label>
+              <select id="project" name="projectType">
+                <option value="ecommerce">Ecommerce</option>
+                <option value="school">School Portal</option>
+                <option value="payment">Payment Gateway Integration</option>
+                <option value="others">Others</option>
+              </select>
+              <input type="submit" value="Send Request">
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- End Build TOgether -->
+
+<!-- Footer -->
+<div class="footer-details">
+  <div class="footer-details-1">
+    <ul class="menus" style="font-weight: 500; font-size: 1.2rem;">
+      <li><a href="applynow.html">Apply</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <!-- <li><a href="#" data-after="Project">Projects</a></li> -->
+    </ul>
+    <div class="footer-social-link">
+      <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+      <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+    </div> <hr><br>
+    <div class="footer-social-content"> 
+      <p style="color: #fff;">Copyright 2023. Brain Builders IT Firm. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+
+<!--End Footer -->
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+</script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script type="module">
+    import isolde from './isolde.js';
+    const isoldejs = new isolde();
+  </script>
+</body>
+</html>

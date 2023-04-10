@@ -1,0 +1,718 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+/* h2 {
+  vertical-align: center;
+  text-align: center;
+} */
+
+html, body {
+  margin: 0;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #111;
+  cursor: pointer;
+}
+ol,
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+b,
+strong{
+  font-weight: 600;
+}
+
+/* ::selection{
+  background: var(--main-bg-color);
+  color: #fff;
+}
+::-moz-selection{
+  background: var(--main-bg-color);
+  color: #fff;
+} */
+
+.container{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.wrapper{
+  padding: 40px 0;
+}
+.card{
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow .2s ease-in-out;
+}
+.card-1{
+  position: relative;
+}
+.card-2{
+  position: absolute;
+  top: 0; 
+  display: flex;
+}
+.card-2 p{
+  background-color: #fff; 
+  color: tomato;
+  padding: 15px 10px;
+  border-radius: 0px 5px 5px 5px;
+  font-size: 1rem;
+}
+.card__picture{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.card-infos{
+  padding: 20px;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card-infos h2{
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+.card__title{
+  font-family: 'Hind';
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+.card__text{
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0;
+  color: #86888A;
+}
+.card__text--high{
+  font-weight: 600;
+}
+.card-infos p{
+  font-size: .8rem;
+  text-align: justify;
+}
+.card-infos h2{
+  font-size: 1.3rem;
+}
+
+.header{
+  background: var(--main-bg-color);
+  height: 160px;
+  display: flex;
+}
+.header__title{
+  margin: auto;
+  font-weight: 300;
+  font-size: 3.2rem;
+  color: #fff;
+}
+.header__title--high{
+  font-weight: 600;
+}
+
+.sortable__nav{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.nav__link{
+  padding: 0 25px 4px;
+  color: #111;
+  font-size: .8rem;
+  font-weight: 300;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+.nav__link.is-active{
+  border-color: var(--main-bg-color);
+}
+
+.footer__list.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list__item.item{
+  display: flex;
+}
+.item__link.link{
+  margin: 0;
+}
+.item__link.link:not(:first-child){
+  margin-left: 20px;
+}
+.link__icon{
+  height: 2rem;
+  width: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 10;
+  padding: .2rem;
+  margin-bottom: 50px;
+}
+
+/*  UI Design */
+.design-service{
+  background-image: url(img/service/service1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50%;
+  padding: 200px 50px;
+  /* background-color: #6778a8; */
+  position: relative;
+  z-index: 1;
+}
+
+.design-service::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #090909;
+  opacity: .8;
+  z-index: -1;
+}
+
+.design-service-1 p{
+  font-size: 2rem;
+  line-height: 1.8rem;
+  color: #f46b45;
+}
+/*  ENd UI Design */
+
+
+/* Learn More */
+.learn-details{
+  background-image: url(img/enroll/1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50%;
+  padding: 200px 50px;
+  /* background-color: #6778a8; */
+  position: relative;
+  z-index: 1;
+}
+
+.learn-details::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #090909;
+  opacity: .8;
+  z-index: -1;
+}
+.learn-details{
+  /* text-align: center; */
+  color: #F0F4FF;
+}
+.learn-details-2{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  
+  /* justify-content: space-between; */
+}
+.learn-details-3{
+  position: absolute;
+  background-color: white;
+  width: 80%;
+  height: 20%;
+  top: 90%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 3px 10px #aaaaaa;
+}
+
+/* End Learn More */
+
+/* Grow */
+.grow-details{
+  font-family: "Nunito Sans",sans-serif;
+  padding: 250px 250px;
+  background-color: #F0F4FF;
+}
+.UIUX-details{
+  font-family: "Nunito Sans",sans-serif;
+  padding: 120px 80px;
+  background-color: #F0F4FF;
+}
+.grow-details-1{
+  display: flex;
+  align-items: center;
+  padding: 80px 0px;
+}
+.grow-details-3{
+  padding: 60px;
+}
+.grow-details-1:nth-last-child(even){
+  flex-direction: row-reverse;
+}
+.img-grow-details{
+  width: 90%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 10px;
+}
+.img-UIUX-details{
+  width: 600px;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 10px;
+}
+
+.grow-details-3 h3{
+  color: #f46b45;
+  font-size: 1.5rem;
+}
+.grow-details-3 p{
+  color: #2e425c;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+/* End Grow */
+
+/* Web Dev App */
+.webapp-details{
+  font-family: "Nunito Sans",sans-serif;
+  padding: 150px 300px;
+  background-color: #F0F4FF;
+}
+.webapp-details-1{
+  padding: 40px 0px;
+}
+.webapp-details-1 p{
+  color: #777777;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+.webapp-details-1 b{
+  color: #777777;
+}
+
+.webapp-details-2 {
+  color: #f7b09c;
+  background-color: #f46b45;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+.webapp-details-2, .webapp-details-1{
+  line-height: 2rem;
+}
+/* End Web Dev App */
+
+
+/* Build TOgether */
+.build-details{
+  font-family: "Nunito Sans",sans-serif;
+  padding: 100px 300px;
+  text-align: center;
+  background-color: #f7b09c;
+}
+.build-details h1{
+ font-size: 4rem;
+ font-weight: 600;
+ color: #180c08;
+ /* box-shadow: 1px 3px 10px #aaaaaa; */
+}
+.build-details p{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #180c08;
+ }
+ .build-details-modal{
+  font-size: 15px;
+  padding: 10px 30px;
+  color: #f46b45;
+  background-color: white;
+  border: 2px solid ;
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: .7s ease;
+  transition-property: background-color, color;
+  cursor: pointer;
+}
+
+.build-details-modal:hover{
+  color: white;
+  background-color: #f46b45;
+  font-weight: 600;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #f46b45;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #180c08;
+}
+/* The Modal (background) */
+.modal {
+  display: none; 
+  text-align: left;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 100px 150px;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* End Build TOgether */
+
+/* Process */
+.process-details{
+    padding: 200px 0px;
+    background-color: #fdfbfa;
+}
+.process-details-1{
+  padding: 200px 80px;
+  background-color: #f46b45;
+  position: relative;
+}
+.process-details-2{
+  position: absolute;
+  top: 85%;
+  display: flex;
+  align-items: center;
+}
+.process-details-3 img{
+  margin-right: 40px;
+  width: 50%;
+}
+.process-details-11 h1{
+  font-size: 4rem;
+  text-align: center;
+  color: #e6e8ec;
+}
+/* End Process */
+
+/* Question */
+.question-details{
+  padding: 150px 50px;
+  background-color: #fafafa;
+}
+/* EndQuestion */
+/* Footer */
+.footer-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 10px;
+    /* background: linear-gradient(to left,#e9941d ,#f46b45 ); */
+    background-color: #180c08;
+    /* background-color: #492417; */
+}
+.footer-social-link i{
+  margin: 15px;
+  color: #fff;
+  transition: .7s ease;
+  transition-property: background-color, color;
+}
+.footer-social-link i:hover{
+  margin: 15px;
+  color: #f7b09c;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menus a{
+  text-decoration: none;
+  margin: 15px;
+  color: #fff;
+}
+/* End Footer */
+
+
+
+@media screen and (max-width: 800px) {
+  .top-nav {
+    padding: 1rem 2em;
+  }
+
+  .bg-content-1 h1{
+    font-size: 40px;
+  }
+  
+  .bg-content-1 h1:nth-of-type(2){
+    font-size: 30px;
+    color: #f46b45;
+  }
+
+  .content-img-skill img{
+    position: absolute;
+    width: 200px;
+  }
+
+  .content-info-skill p{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+.content-apply-skill a, .content-apply-skill a:hover{
+    width: 55%;
+  }
+  .our-services-1 h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+.our-service-details, .our-service-details1{
+  display: block;
+  text-align: justify;
+}
+.our-service-details-line, .our-service-details-line-1{
+  display: none;
+}
+.our-service-details-2{
+  width: 30%;
+}
+
+.skills-details-2{
+  display: block;
+}
+.content-info-skill p{
+  line-height: 2rem;
+}
+.content-info-skill h1{
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.content-skils-details p{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.skills-details-3{
+  width: 25%;
+}
+.skills-img-1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.skills-details-4{
+  display: none;
+}
+.skills-details-5{
+  display: contents;
+}
+
+/* Career */
+.career-details{
+  height: 30%;
+  padding: 40px 50px;
+}
+.career-details-1, .design-service p{
+  font-size: .7rem;
+  line-height: 1rem;
+}
+
+.career-details-1 h1{
+  font-size: 1rem;
+}
+.career-details-1{
+  padding: 0px;
+}
+
+/* Footer */
+.menus a{
+  margin: 10px;
+}
+.footer-details{
+  padding: 50px 10px;
+}
+ul li a{
+  font-size: 1rem;
+}
+
+/* Build Togethere */
+.build-details h1{
+  font-size: 2rem;
+ }
+ .build-details p{
+   font-size: .8rem;
+  }
+
+/* grow */
+.grow-details, .UIUX-details, .build-details {
+  padding: 100px 40px;
+}
+.grow-details-1{
+  display: block;
+  align-items: center;
+  padding: 30px 0px;
+}
+.grow-details-3, .webapp-details{
+  padding: 0px;
+}
+.webapp-details-1{
+  padding: 30px 30px
+}
+
+.webapp-details-1 p{
+  line-height: 1.2rem;
+}
+
+
+.learn-details-3{
+  position: absolute;
+  background-color: white;
+  width: 98%;
+  padding: 20px;
+  height: 30%;
+  top: 85%;
+}
+.learn-details-3 .design-service, h1{
+  font-size: 25px;
+}
+.career-details-1 h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.img-UIUX-details{
+  width: 300px;
+}
+.UIUX-details h1:nth-last-of-type(1){
+  font-size: 1.5rem;
+}
+.grow-details-2 video{
+  width: 100%;
+  height: 100%;
+}
+
+/* pROCESS */
+.process-details{
+  padding: 100px 0px;
+  background-color: #dde1ec;
+}
+.process-details-1{
+  padding: 50px 0px;
+}
+.process-details-2{
+  top: 80%;
+  left: 50px;
+  /* height: 10%; */
+}
+.process-details-3 img{
+  margin-right: 0px;
+  width: 50%;
+  height: 50%;
+}
+.process-details-3 h1{
+  font-size: .5rem;
+}
+.process-details-11 h1{
+  font-size: 1rem;
+}
+
+.modal-content {
+  padding: 30px 20px;
+  width: 90%;
+}
+.digital-details{
+  font-size: .5rem;
+}
+
+.nav__link{
+  padding: 0 3px 2px;
+  font-size: .9rem;
+}
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- <link rel="stylesheet" href="learnmore/aninate.css"> -->
+  <link rel="shortcut icon" type="image/jpg" href="img/brainlogo.webp"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Vendors/css/grid.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <style>
+    .container{
+        transform-style: preserve-3d;
+        display: flex;
+        min-height: 60vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-team{
+      padding: 30px;
+    }
+
+    .container-team-1 h1{
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 600;
+      color: #f46b45;
+    }
+
+    .container .box{
+        position: relative;
+        width: 320px;
+        height: 300px;
+        margin: 5px;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+    
+    .container .box .body{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 0.9s ease;
+    }
+    .container .box .body .imgContainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        transform-style: preserve-3d;
+    }
+    
+    .container .box .body .imgContainer img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container .box .body .content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 80%;
+        background: #333;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transform: rotateY(180deg);
+    }
+    
+    .container .box:hover .body{
+        transform: rotateY(180deg);
+    }
+    
+    .container .box .body .content div{
+        transform-style: preserve-3d;
+        padding: 20px;
+        background: linear-gradient(45deg, #FE0061,#FFEB3B);
+        transform: translateZ(100px);
+    }
+    
+    .container .box .body .content div h3{
+        letter-spacing: 1px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .container{
+        display: block;
+    }
+    .container-team{
+      padding: 30px 0px;
+    }
+    .container .box .body .imgContainer{
+        width: 100%;
+        height: 100%;
+    }
+    .container .box .body .content{
+        width: 100%;
+        height: 100%;
+    }
+    .container .box{
+        margin: 25px;
+    }
+    }
+  </style>
+</head>
+<body>
+  
+  <section class="top-nav">
+    <div id="logo-details">
+        <a href="./index.html"><img src="img/brainlogo.png" id="logo-details-2" alt="brainlogo" style="height: 40px; width:40px"></a>
+        <a href="#" id="logo-details-3" style="display: none;">BBITF</a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="./index.html" data-after="Home">Home</a></li>
+      <li style="border-bottom: 3px solid white;"><a href="./about.html" data-after="About">About</a></li>
+      <li><a href="./contact.html" data-after="Contact">Contact</a></li>
+      <li><a href="/.service.html" data-after="Service">Services</a></li>
+      <li><a href="./blog.html" data-after="Blog">Blog</a></li>
+      <li><a style="color: #f46b45; font-weight: 600;" class="login-detail" href="./login.html" data-after="Login">Login</a></li>
+    </ul>
+  </section>
+
+
+<!-- UI Design service  -->
+<div class="design-service" style="background-image: url(img/about/teenspeak.jpg);">
+    <div class="design-service-1" data-aos="zoom-in" data-aos-duration="3000">
+      <h1>ABOUT US</h1> <br>
+      <a style="color: #fff; font-size: 1rem; background-color: #f46b45; padding: 15px 40px;" href="./index.html" data-after="Home">Home</a>
+    </div>
+  </div> 
+  <!-- UI Design service-->
+
+<!-- Manager Speech -->
+<section  class="manager-details">
+    <div class="manager-about" id="about">
+      <div class="col-left">
+        <div class="about-img" data-aos="fade-in" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+          <img src="./img/about/abideen.jpg" alt="abideen">
+        </div>
+      </div>
+      <div class="col-right" data-aos="flip-left" data-aos-offset="300" data-aos-duration="3000" data-aos-easing="ease-in-sine">
+            <h1 class="section-title">Enroll in our ICT and Software Training Centre to learn the skills for the future. Let’s prepare you for the digital economy</h1>
+            <p>If you are looking for a computer training to learn in-demand ICT and Software skills, Then you are in the right place. At <span style="color: #f46b45; font-weight: 600;">
+              Brain Builders IT Firm</span>, we provide unmatched practical hands-on training on computer and ICT skills that are needed by companies and organizations in the digital age. 
+              We are proud to say that when it comes to practical Computer training courses in Nigeria we make a difference. We tailor each training to the student’s needs. We have grown to 
+              be among best computer training centre that puts the interest of the students first. Our Computer training gives you all the practical skills you need to be job-ready in this 
+              digital age where practical ICT and computer skills have become so important. Our computer training is 80% practical and 10% theory where a trainer is assigned to you and you 
+              must build a real project in your area of study before you graduate.</p> <br>
+            <h1 class="section-title"> OLASUPO ABIDEEN OPEYEMI</h1>
+            <h3 style="color: black;">CHIEF EXECUTIVE OFFICER</h3>
+            <a class="footer-social-link" href="https://web.facebook.com/olasupo.abideen" target="_blank"><i class="fa fa-facebook" style="font-size:24px; color: black;"></i></a>
+            <a class="footer-social-link" href="https://www.linkedin.com/in/olasupoabideen/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px; color: black;" ></i></a>
+            <a class="footer-social-link" href="https://twitter.com/opegoogle" target="_blank"><i class="fa fa-twitter" style="font-size:24px; color: black;"></i></a>
+            <a class="footer-social-link" href="https://www.instagram.com/opegoogle001/" target="_blank"><i class="fa fa-instagram" style="font-size:24px; color:black;"></i></a>   
+      </div>
+    </div>
+</section>
+<!-- End Manager Speech -->
+
+<!-- Our Team -->
+<div class="container-team" >
+  <div class="container-team-1">
+    <h1>Our Teams</h1>
+    <p style="text-align: justify;">Our team member are not just techie but web geek with business skills, 
+      they are Web Business Consultant. Their goal for every business relationship is not to build a website, 
+      develop a web app or run a digital advert campaign but rather improve your 
+      <abbr title="Return on Investment">ROI</abbr> using web technologies.</p>
+  </div>
+  <!-- First Team -->
+  <div class="container d-flex align-items-center justify-content-center flex-wrap"  data-aos="zoom-in" data-aos-duration="3000">
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="img/about/yinka2.jfif" alt="">
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3 class="text-white fs-5">Adesina Yinka Abeeb</h3>
+                    <p class="fs-6 text-white">Web Developer</p>
+                      <a class="footer-social-link" href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                      <a class="footer-social-link" href="https://www.linkedin.com/in/yinka-abeeb-adesina-ba9093b4/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                      <a class="footer-social-link" href="https://twitter.com/EtzLugacity" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                      <a class="footer-social-link" href="https://www.instagram.com/lugacity/" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="img/about/saheed.jfif" alt="">
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                  <h3 class="text-white fs-5">Ganiyu Saheed Ishola</h3>
+                  <p class="fs-6 text-white">Copywriter & Content Strategist</p>
+                    <a class="footer-social-link" href="https://web.facebook.com/ganiyu.saheedisola/about"> <i class="fa fa-facebook"  style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="https://www.linkedin.com/in/saheed-ganiyu/"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                    <a class="footer-social-link" href="https://twitter.com/ganiyu_isola"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="img/about/hakeem.jfif" alt="img">
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                  <h3 class="text-white fs-5">Olasupo Hakeem Adigun</h3>
+                  <p class="fs-6 text-white">Product Designer</p>
+                    <a class="footer-social-link" href="https://web.facebook.com/hakeem.olasupo.1"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="https://www.linkedin.com/in/digitalforus/"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                    <a class="footer-social-link" href="https://twitter.com/digitalforus"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="https://www.instagram.com/digitalforuss/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>  
+
+  <!-- Second Team -->
+  <div class="container d-flex align-items-center justify-content-center flex-wrap"  data-aos="zoom-in" data-aos-duration="3000">
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="img/about/abdullahi.jpg" alt="">
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3 class="text-white fs-5">Olasupo Abdullahi Akande</h3>
+                    <p class="fs-6 text-white">Creative Design Tutor | Product Designer</p>
+                      <a class="footer-social-link" href="https://web.facebook.com/olasupo.abdullahiakande" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                      <a class="footer-social-link" href="https://www.linkedin.com/in/abdullahiolasupo/"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                      <a class="footer-social-link" href="https://twitter.com/abdullahiolasup"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                      <a class="footer-social-link" href="https://www.instagram.com/olasupo_abdullahi/"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+      <div class="body">
+          <div class="imgContainer">
+              <img src="img/about/idris.jpg" alt="">
+          </div>
+          <div class="content d-flex flex-column align-items-center justify-content-center">
+              <div>
+                <h3 class="text-white fs-5">Idris Àyọ̀mọ́ Ọ̀kẹ́</h3>
+                <p class="fs-6 text-white">Research Writer</p>
+                  <a class="footer-social-link" href="https://web.facebook.com/oke.idris.9" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                  <a class="footer-social-link" href="hthttps://www.linkedin.com/in/idris-%C3%A0y%E1%BB%8D%CC%80m%E1%BB%8D%CC%81-%E1%BB%8D%CC%80k%E1%BA%B9%CC%81-7a34961b8/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                  <a class="footer-social-link" href="https://twitter.com/OkeAyomo" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                  <a class="footer-social-link" href="#" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="box">
+        <div class="body">
+            <div class="imgContainer">
+                <img src="img/about/sodiq.jpg" alt="">
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                  <h3 class="text-white fs-5">Tajudeen Sodiq </h3>
+                  <p class="fs-6 text-white"> Brand & UI/UX Designer</p>
+                    <a class="footer-social-link" href="https://web.facebook.com/wealth4uss" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="https://www.linkedin.com/in/wealth4us/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+                    <a class="footer-social-link" href="https://twitter.com/wealth4uss" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                    <a class="footer-social-link" href="https://www.instagram.com/wealth_4uss/" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div> 
+</div>
+<!-- End Our Team -->
+
+
+<!-- Footer -->
+<div class="footer-details">
+  <div class="footer-details-1">
+    <ul class="menus" style="font-weight: 500; font-size: 1.2rem;">
+      <li><a href="applynow.html">Apply</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <!-- <li><a href="#" data-after="Project">Projects</a></li> -->
+    </ul>
+    <div class="footer-social-link">
+      <a href="https://web.facebook.com/adeshina.olayinka2" target="_blank"><i class="fa fa-facebook" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-linkedin" style="font-size:24px" ></i></a>
+      <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+      <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>   
+    </div> <hr><br>
+    <div class="footer-social-content"> 
+      <p style="color: #fff;">Copyright 2023. Brain Builders IT Firm. All Rights Reserved</p>
+    </div>
+  </div>
+</div>
+
+<!--End Footer -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="app.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+
+
+
